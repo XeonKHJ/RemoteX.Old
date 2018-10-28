@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="RemoteX.Connection.BluetoothListner.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RemoteX.Connection.BluetoothListner"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ListView x:Name="lvBTDevice" Margin="50,50,50,100" ItemClick ="lvBTDevice_ItemClick" SelectionMode = "None" IsItemClickEnabled = "True" Background="{ThemeResource SystemControlBackgroundBaseLowBrush}" VerticalAlignment="Stretch"/>
+        <TextBlock x:Name="TextBlock_Debug" HorizontalAlignment="Center" Text="调试信息" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="0,0,0,5" Foreground="Red" Height="25"/>
+        <TextBox x:Name="TextBox_Send" HorizontalAlignment="Center" Text="发送信息" Margin="-100,0,0,40" VerticalAlignment="Bottom" Width="80" Height="32"/>
+        <Button x:Name="Button_Send" Content="发送" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="100,0,0,39" Height="33"/>
+        <Button x:Name="Button_Recieve" Content="接收" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="230,0,0,39" Height="33"/>
+        <Button x:Name="Button_Restart" Content="重新开始" HorizontalAlignment="Center" Margin="400,647,0,39" VerticalAlignment="Bottom" Click="Button_Restart_Click"/>
+
+    </Grid>
+</Page>
