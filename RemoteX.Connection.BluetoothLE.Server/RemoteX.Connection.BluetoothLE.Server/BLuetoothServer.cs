@@ -8,6 +8,9 @@ namespace RemoteX.Connection.BluetoothLE.Server
     {
         private GattServiceProvider serviceProvider;
         private Guid serviceUuid;
+
+        private Guid mouseControl = new Guid("e1a3da24-0c8e-4935-b0a1-0cf579c867a2");
+        private Guid keyBoardControl = new Guid("fbb7dbc9-9e35-465a-a2f8-cad2da11b583");
         public GattServiceProvider ServiceProvider
         {
             private set
@@ -42,7 +45,14 @@ namespace RemoteX.Connection.BluetoothLE.Server
 
         private async void createCharacteristics()
         {
-
+            var mouseControlCharacteristicParameters = new GattLocalCharacteristicParameters
+            {
+                CharacteristicProperties = (GattCharacteristicProperties.Read)|(GattCharacteristicProperties.Notify),
+                ReadProtectionLevel = GattProtectionLevel.Plain,
+                UserDescription = "鼠标控制特征"
+            };
+            var result = await serviceProvider.Service.CreateCharacteristicAsync(mouseControl, mouseControlCharacteristicParameters);
+            var characteristic = result.Characteristic;
         }
     }
 }
