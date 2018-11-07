@@ -6,11 +6,26 @@ namespace RemoteX.Connection.BluetoothLE.Server
 {
     class BluetoothServer
     {
+        enum ControlType {Mouse, Keyboard};
         private GattServiceProvider serviceProvider;
         private Guid serviceUuid;
 
         private Guid mouseControl = new Guid("e1a3da24-0c8e-4935-b0a1-0cf579c867a2");
-        private Guid keyBoardControl = new Guid("fbb7dbc9-9e35-465a-a2f8-cad2da11b583");
+        private Guid keyboardControl = new Guid("fbb7dbc9-9e35-465a-a2f8-cad2da11b583");
+        GattLocalCharacteristicParameters mouseControlCharacteristicParameters = new GattLocalCharacteristicParameters
+        {
+                CharacteristicProperties = (GattCharacteristicProperties.Read)|(GattCharacteristicProperties.Notify),
+                ReadProtectionLevel = GattProtectionLevel.Plain,
+                UserDescription = "鼠标控制特征"
+        };
+        GattLocalCharacteristicParameters keyboardControlCharacteristicParameters = new GattLocalCharacteristicParameters
+        {
+                CharacteristicProperties = (GattCharacteristicProperties.Read)|(GattCharacteristicProperties.Notify),
+                ReadProtectionLevel = GattProtectionLevel.Plain,
+                UserDescription = "键盘控制特征"
+        };
+
+
         public GattServiceProvider ServiceProvider
         {
             private set
@@ -43,16 +58,20 @@ namespace RemoteX.Connection.BluetoothLE.Server
             }
         }
 
-        private async void createCharacteristics()
+        private async void createCharacteristics(ControlType controlType)
         {
-            var mouseControlCharacteristicParameters = new GattLocalCharacteristicParameters
+            GattLocalCharacteristicResult result;
+            GattLocalCharacteristic characteristic;
+            if(controlType == ControlType.Mouse)
             {
-                CharacteristicProperties = (GattCharacteristicProperties.Read)|(GattCharacteristicProperties.Notify),
-                ReadProtectionLevel = GattProtectionLevel.Plain,
-                UserDescription = "鼠标控制特征"
-            };
-            var result = await serviceProvider.Service.CreateCharacteristicAsync(mouseControl, mouseControlCharacteristicParameters);
-            var characteristic = result.Characteristic;
+                result = await serviceProvider.Service.CreateCharacteristicAsync(mouseControl, mouseControlCharacteristicParameters);
+                characteristic = result.Characteristic;
+            }
+            else if(controlType == ControlType.Keyboard)
+            {
+                result = await serviceProvider.Service.CreateCharacteristicAsync(keyboardControl, keyboardControlCharacteristicParameters);
+                characteristic = result.Characteristic;
+            }
         }
     }
 }
