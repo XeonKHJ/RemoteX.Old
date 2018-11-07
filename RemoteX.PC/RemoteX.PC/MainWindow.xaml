@@ -1,0 +1,63 @@
+﻿<Window x:Class="RemoteX.PC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RemoteX.PC"
+        mc:Ignorable="d"
+        Title="Keyboard" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Button_KeyboardQ" Content="Q" HorizontalAlignment="Left" Margin="120,180,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardW" Content="W" HorizontalAlignment="Left" Margin="160,180,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardE" Content="E" HorizontalAlignment="Left" Margin="200,180,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardR" Content="R" HorizontalAlignment="Left" Margin="240,180,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardT" Content="T" HorizontalAlignment="Left" Margin="280,180,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardY" Content="Y" HorizontalAlignment="Left" Margin="320,180,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardU" Content="U" HorizontalAlignment="Left" Margin="360,180,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardI" Content="I" HorizontalAlignment="Left" Margin="400,180,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardO" Content="O" HorizontalAlignment="Left" Margin="440,180,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardP" Content="P" HorizontalAlignment="Left" Margin="480,180,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardLBrace" Content="{}{" HorizontalAlignment="Left" Margin="520,180,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardRBrace" Content="{}}" HorizontalAlignment="Left" Margin="560,180,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardOr" Content="|" HorizontalAlignment="Left" Margin="600,180,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardIA" Content="I" HorizontalAlignment="Left" Margin="400,180,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardA" Content="A" HorizontalAlignment="Left" Margin="140,220,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardS" Content="S" HorizontalAlignment="Left" Margin="180,220,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardD" Content="D" HorizontalAlignment="Left" Margin="220,220,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardF" Content="F" HorizontalAlignment="Left" Margin="260,220,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardG" Content="G" HorizontalAlignment="Left" Margin="300,220,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardH" Content="H" HorizontalAlignment="Left" Margin="340,220,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardJ" Content="J" HorizontalAlignment="Left" Margin="380,220,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardK" Content="K" HorizontalAlignment="Left" Margin="420,220,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardL" Content="L" HorizontalAlignment="Left" Margin="460,220,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardColon" Content="{}:" HorizontalAlignment="Left" Margin="500,220,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardZ" Content="Z" HorizontalAlignment="Left" Margin="160,260,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardX" Content="X" HorizontalAlignment="Left" Margin="200,260,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardC" Content="C" HorizontalAlignment="Left" Margin="240,260,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardV" Content="V" HorizontalAlignment="Left" Margin="280,260,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardB" Content="B" HorizontalAlignment="Left" Margin="320,260,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardN" Content="N" HorizontalAlignment="Left" Margin="360,260,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardM" Content="M" HorizontalAlignment="Left" Margin="400,260,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboarLt" Content="&lt;" HorizontalAlignment="Left" Margin="440,260,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardGt" Content="&gt;" HorizontalAlignment="Left" Margin="480,260,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardQuetion" Content="?" HorizontalAlignment="Left" Margin="520,260,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardShift" Content="Shift" HorizontalAlignment="Left" Margin="560,260,0,0" VerticalAlignment="Top" Width="70" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardShiftEnter" Content="Enter" HorizontalAlignment="Left" Margin="580,220,0,0" VerticalAlignment="Top" Width="50" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardDqm" Content="&quot;" HorizontalAlignment="Left" Margin="540,220,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_Keyboard1" Content="1" HorizontalAlignment="Left" Margin="100,140,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_Keyboard2" Content="2" HorizontalAlignment="Left" Margin="140,140,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_Keyboard3" Content="3" HorizontalAlignment="Left" Margin="180,140,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_Keyboard4" Content="4" HorizontalAlignment="Left" Margin="220,140,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_Keyboard5" Content="5" HorizontalAlignment="Left" Margin="260,140,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_Keyboard6" Content="6" HorizontalAlignment="Left" Margin="300,140,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_Keyboard7" Content="7" HorizontalAlignment="Left" Margin="340,140,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardI_Copy" Content="I" HorizontalAlignment="Left" Margin="380,140,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_Keyboard9" Content="9" HorizontalAlignment="Left" Margin="420,140,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_Keyboard0" Content="0" HorizontalAlignment="Left" Margin="460,140,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardMinus" Content="-" HorizontalAlignment="Left" Margin="500,140,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardPlus" Content="+" HorizontalAlignment="Left" Margin="540,140,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_KeyboardBs" Content="Backspace" HorizontalAlignment="Left" Margin="580,140,0,0" VerticalAlignment="Top" Width="50" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="Button_Keyboard8" Content="8" HorizontalAlignment="Left" Margin="380,140,0,0" VerticalAlignment="Top" Width="30" Height="30" VerticalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
